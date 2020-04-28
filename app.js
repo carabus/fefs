@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 
 app.get('/teapot', (req, res) => {
   res.setHeader('X-My-Header', 42);
-  res.status = 418;
+  res.status(418);
   res.send('Teapot');
 });
 
